@@ -266,6 +266,17 @@ TRANSFER LEARNING**.
 
 For citation please use:  
 
+BuilDa 2.0 Release:  
+```
+@article{krug2025highly,
+  title={A Highly Configurable Framework for Large-Scale Thermal Building Data Generation to drive Machine Learning Research},
+  author={Krug, Thomas and Raisch, Fabian and Aimer, Dominik and Wirnsberger, Markus and Sigg, Ferdinand and Koch, Felix and Sch{\"a}fer, Benjamin and Tischler, Benjamin},
+  journal={arXiv preprint arXiv:2512.00483},
+  year={2025}
+}
+```  
+
+BuilDa 1.0 release:  
 ```
 @inproceedings{
   BUILDA,
