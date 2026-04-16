@@ -20,5 +20,5 @@ dependencies = [
 
 
 [tool.hatch.build.targets.wheel]
-packages = ["src"]
+packages = ["src/builda"]
 force-include = {"resources" = "BuilDa/resources"}
