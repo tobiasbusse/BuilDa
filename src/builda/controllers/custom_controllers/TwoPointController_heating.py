@@ -1,4 +1,4 @@
-from src.controllers.controller import Controller
+from builda.controllers.controller import Controller
 
 
 

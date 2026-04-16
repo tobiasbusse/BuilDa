@@ -1,4 +1,4 @@
-from src.utils.util_functions import get_converter_function_by_string
+from builda.utils.util_functions import get_converter_function_by_string
 
 class Converter():
 

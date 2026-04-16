@@ -1,6 +1,6 @@
 import numpy as np
-from src.converter_functions.converter_function import ConverterFunction
-from src.utils.util_functions import load_hygienicalWindowOpening_data,load_internalGain_data,load_weather_data,df_findcol
+from builda.converter_functions.converter_function import ConverterFunction
+from builda.utils.util_functions import load_hygienicalWindowOpening_data,load_internalGain_data,load_weather_data,df_findcol
 
 
 

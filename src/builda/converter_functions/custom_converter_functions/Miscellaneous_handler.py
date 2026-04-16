@@ -1,4 +1,4 @@
-from src.converter_functions.converter_function import ConverterFunction
+from builda.converter_functions.converter_function import ConverterFunction
 import pandas as pd 
 
 

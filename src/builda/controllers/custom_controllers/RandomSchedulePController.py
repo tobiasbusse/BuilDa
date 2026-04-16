@@ -1,5 +1,5 @@
-from src.controllers.controller import Controller
-from src.controllers.custom_controllers.PController_heating import PController_heating
+from builda.controllers.controller import Controller
+from builda.controllers.custom_controllers.PController_heating import PController_heating
 import random
 
 class RandomSchedulePController(PController_heating):  

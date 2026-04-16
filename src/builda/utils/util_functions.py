@@ -76,15 +76,15 @@ def get_controller_by_string(s: str):
     Returns: The corresponding controller given by the string. If a controller wasn't found, raise error.
     '''
     #%%controllers
-    from src.controllers.controller import Controller
+    from builda.controllers.controller import Controller
     #custom classes
-    from src.controllers.custom_controllers.PController_heating import PController_heating
-    from src.controllers.custom_controllers.PIController_heating import PIController_heating
-    from src.controllers.custom_controllers.TwoPointController_cooling import TwoPointController_cooling
-    from src.controllers.custom_controllers.TwoPointController_heating import TwoPointController_heating
-    from src.controllers.custom_controllers.TwoPointController_windowOpening import TwoPointController_windowOpening
-    from src.controllers.custom_controllers.RandomSchedulePController import RandomSchedulePController
-    from src.controllers.custom_controllers.PIController_cooling import PIController_cooling
+    from builda.controllers.custom_controllers.PController_heating import PController_heating
+    from builda.controllers.custom_controllers.PIController_heating import PIController_heating
+    from builda.controllers.custom_controllers.TwoPointController_cooling import TwoPointController_cooling
+    from builda.controllers.custom_controllers.TwoPointController_heating import TwoPointController_heating
+    from builda.controllers.custom_controllers.TwoPointController_windowOpening import TwoPointController_windowOpening
+    from builda.controllers.custom_controllers.RandomSchedulePController import RandomSchedulePController
+    from builda.controllers.custom_controllers.PIController_cooling import PIController_cooling
     if s == "TwoPointController_heating":
         return TwoPointController_heating()
     elif s == "TwoPointController_windowOpening":
@@ -118,17 +118,17 @@ def get_converter_function_by_string(s: str):
     Returns: A converter function if there exists one with this string.
     '''
     #%%converter functions
-    from src.converter_functions.converter_function import ConverterFunction
+    from builda.converter_functions.converter_function import ConverterFunction
     #custom classes
-    from src.converter_functions.custom_converter_functions.Component_properties_calculator import Component_properties_calculator
-    from src.converter_functions.custom_converter_functions.Link_resolver import Link_resolver
-    from src.converter_functions.custom_converter_functions.Miscellaneous_handler import Miscellaneous_handler
-    from src.converter_functions.custom_converter_functions.Model_compatibility_layer import Model_compatibility_layer
-    from src.converter_functions.custom_converter_functions.Nominal_heating_power_calculator import Nominal_heating_power_calculator
-    from src.converter_functions.custom_converter_functions.Nominal_cooling_power_calculator import Nominal_cooling_power_calculator
-    from src.converter_functions.custom_converter_functions.RC_Distribution_Configurator import RC_Distribution_Configurator
-    from src.converter_functions.custom_converter_functions.Component_configurator import Component_configurator
-    from src.converter_functions.custom_converter_functions.Zone_dimensions_calculator import Zone_dimensions_calculator
+    from builda.converter_functions.custom_converter_functions.Component_properties_calculator import Component_properties_calculator
+    from builda.converter_functions.custom_converter_functions.Link_resolver import Link_resolver
+    from builda.converter_functions.custom_converter_functions.Miscellaneous_handler import Miscellaneous_handler
+    from builda.converter_functions.custom_converter_functions.Model_compatibility_layer import Model_compatibility_layer
+    from builda.converter_functions.custom_converter_functions.Nominal_heating_power_calculator import Nominal_heating_power_calculator
+    from builda.converter_functions.custom_converter_functions.Nominal_cooling_power_calculator import Nominal_cooling_power_calculator
+    from builda.converter_functions.custom_converter_functions.RC_Distribution_Configurator import RC_Distribution_Configurator
+    from builda.converter_functions.custom_converter_functions.Component_configurator import Component_configurator
+    from builda.converter_functions.custom_converter_functions.Zone_dimensions_calculator import Zone_dimensions_calculator
     if s == "Link_resolver":
         return Link_resolver()
     if s == "Miscellaneous_handler":

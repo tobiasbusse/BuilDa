@@ -1,5 +1,5 @@
-from src.controllers.controller import Controller
-from src.controllers.custom_controllers.PIController_heating import PIController_heating
+from builda.controllers.controller import Controller
+from builda.controllers.custom_controllers.PIController_heating import PIController_heating
 
 
 class PController_heating(PIController_heating):  

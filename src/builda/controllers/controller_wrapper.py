@@ -1,6 +1,6 @@
 from typing import List
-from src.fmuwrapper import FMUWrapper
-from src.utils.util_functions import get_controller_by_string
+from builda.fmuwrapper import FMUWrapper
+from builda.utils.util_functions import get_controller_by_string
 
 class ControllerWrapper:
     '''

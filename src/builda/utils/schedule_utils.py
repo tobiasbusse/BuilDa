@@ -1,4 +1,4 @@
-from src.utils.util_functions import parse_duration, get_step_size_arr
+from builda.utils.util_functions import parse_duration, get_step_size_arr
 
 def parse_schedule(schedule: dict, global_start: int, global_stop: int):
 	'''
@@ -59,7 +59,7 @@ def schedule_step_size_array(start_time: int,
 								schedule: dict):
 
 	'''
-	executes src.utils.util_functions.get_step_size_array for a schedule containing halting points
+	executes from builda..utils.util_functions.get_step_size_array for a schedule containing halting points
 	arguments:
 		- start_time, stop_time, writer_step_size, controller_step_size, max_permitted_time_step: directly passed to get_step_size_arr()
 		- schedule: dictionary {<starttime in s (int)>: {<parameter_name>:<new_value>}}
@@ -109,7 +109,7 @@ def get_intGainProfile_from_shortname(shortname):
 		case "Student_Flatsharing":
 			return base_path + "CHR52_Student_Flatsharing_power_with_human_heat.txt"
 		case _:
-			raise LookupError(f"shortname {shortname} for internalGainProfile not specified. Look into src/utils/schedule_utils for further information.")
+			raise LookupError(f"shortname {shortname} for internalGainProfile not specified. Look into from builda./utils/schedule_utils for further information.")
 
 
 def get_winOpProfile_from_shortname(shortname):
@@ -139,7 +139,7 @@ def get_winOpProfile_from_shortname(shortname):
 		case "Student_Flatsharing":
 			return base_path + "CHR52_Student_Flatsharing_window_opening.txt"
 		case _:
-			raise LookupError(f"shortname {shortname} for windowOpeningProfile not specified. Look into src/utils/schedule_utils for further information.")
+			raise LookupError(f"shortname {shortname} for windowOpeningProfile not specified. Look into from builda./utils/schedule_utils for further information.")
 
 
 

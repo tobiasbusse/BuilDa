@@ -1,5 +1,5 @@
-from src.controllers.controller import Controller
-from src.controllers.custom_controllers.TwoPointController_heating import TwoPointController_heating
+from builda.controllers.controller import Controller
+from builda.controllers.custom_controllers.TwoPointController_heating import TwoPointController_heating
 
 
 class TwoPointController_cooling(TwoPointController_heating):

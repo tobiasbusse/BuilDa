@@ -3,7 +3,7 @@ import re
 import numpy as np
 import random
 from typing import List
-from src.utils.util_functions import load_json,load_hygienicalWindowOpening_data,load_internalGain_data,load_weather_data
+from builda.utils.util_functions import load_json,load_hygienicalWindowOpening_data,load_internalGain_data,load_weather_data
 
 class Config:
     def __init__(self, 

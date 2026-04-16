@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-from src.utils.config import Config
-from src.fmuwrapper import FMUWrapper
-from src.converter import Converter
-from src.variator import Variator
-from src.controllers.controller_wrapper import ControllerWrapper
-from src.utils.util_functions import get_step_size_arr
-from src.utils.schedule_utils import parse_schedule, schedule_step_size_array, get_index_from_dict_like_array, check_for_invalid_keys
+from builda.utils.config import Config
+from builda.fmuwrapper import FMUWrapper
+from builda.converter import Converter
+from builda.variator import Variator
+from builda.controllers.controller_wrapper import ControllerWrapper
+from builda.utils.util_functions import get_step_size_arr
+from builda.utils.schedule_utils import parse_schedule, schedule_step_size_array, get_index_from_dict_like_array, check_for_invalid_keys
 import copy
 
 class SimulationController:
