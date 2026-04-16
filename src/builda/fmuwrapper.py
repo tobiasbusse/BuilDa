@@ -1,10 +1,14 @@
+import json
 import os
+import platform
 import shutil
+from importlib.resources import files
+from pathlib import Path
+
+import pandas as pd
 from fmpy import read_model_description, extract
 from fmpy.fmi2 import FMU2Slave
-import pandas as pd
-import json
-import platform
+
 
 class FMUWrapper:
     def __init__(self,
@@ -37,8 +41,9 @@ class FMUWrapper:
         #json.dump(self.fmu_default_dict, open("resources/FMUs/fmu_state_dict.json","w"), indent=4, sort_keys=True)
 
         #fill missing start values with those from json
+        resources_root = Path(files("BuilDa.resources"))
         self.fmu_default_dict.update({k:v for k,v in \
-            json.load(open("resources/FMUs/fmu_state_dict.json","r")).items() \
+            json.load(open(resources_root / "FMUs" / "fmu_state_dict.json","r")).items() \
             if k in self.fmu_default_dict.keys() and self.fmu_default_dict[k]==None})
         
 
