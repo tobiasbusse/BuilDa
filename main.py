@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-from src.utils.config import Config
-from src.utils.exporter import Exporter
-from src.variator import Variator
+from builda.utils.config import Config
+from builda.utils.exporter import Exporter
+from builda.variator import Variator
 import sys
 import os
 import time,datetime
 import zipfile
 from concurrent.futures import ProcessPoolExecutor, as_completed
-from src.simulations.simulation_controller import SimulationController
-from src.utils.util_functions import setup_paths
+from builda.simulations.simulation_controller import SimulationController
+from builda.utils.util_functions import setup_paths
 from multiprocessing import cpu_count
 
 #======================
